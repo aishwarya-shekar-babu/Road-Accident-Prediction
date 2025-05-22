@@ -8,7 +8,7 @@ This project explores the use of machine learning techniques to predict the **se
 ## Project Overview
 
 - **Goal**: Predict accident severity — categorized as *Slight*, *Serious*, or *Fatal*.
-- **Dataset**: UK Road Safety data (STATS19), obtained via [Kaggle](https://www.kaggle.com/).
+- **Dataset**: UK Road Safety data (STATS19), obtained via [Kaggle]([https://www.kaggle.com/](https://www.kaggle.com/datasets/tsiaras/uk-road-safety-accidents-and-vehicles)).
 - **Size**: ~1.9 million records (~200–400 MB).
 - **Environment**: Python in Google Colab, version control via GitHub.
 
@@ -16,7 +16,7 @@ This project explores the use of machine learning techniques to predict the **se
 
 ## Dataset Details
 
-- **Source**: [UK Department for Transport (DfT)](https://www.gov.uk/government/statistical-data-sets/road-accidents-and-safety-statistics-data-tables)
+- **Source**: [UK Department for Transport (DfT)]([https://www.gov.uk/government/statistical-data-sets/road-accidents-and-safety-statistics-data-tables](https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-accidents-safety-data))
 - **File Used**: `Accident_Information.csv`
 - **Data License**: UK Open Government Licence (OGL)
 - **Key Features**:
