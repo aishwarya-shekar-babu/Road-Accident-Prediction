@@ -1,5 +1,5 @@
 
-# Road Traffic Accident Severity Prediction - UK
+# Machine Learning prediction of Road Accident Severity using Urban factors,vehicle data  and Weather conditions
 
 This project explores the use of machine learning techniques to predict the **severity of road traffic accidents** in the United Kingdom. Using a large-scale dataset from the **Department for Transport (DfT)**, the objective is to identify key environmental and temporal factors influencing accident severity. The findings aim to support data-driven road safety policies and targeted interventions.
 
