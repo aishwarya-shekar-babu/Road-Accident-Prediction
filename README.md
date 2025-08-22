@@ -1,44 +1,62 @@
+# 🚦 Machine Learning Prediction of Road Accident Severity
 
-# Machine Learning prediction of Road Accident Severity using Urban factors,vehicle data  and Weather conditions
+This project predicts the severity of road accidents in the UK using urban factors, weather, and vehicle data. The main goal is to **identify high-risk accidents** and prioritize detection of severe or fatal cases.  
 
-This project explores the use of machine learning techniques to predict the **severity of road traffic accidents** in the United Kingdom. Using a large-scale dataset from the **Department for Transport (DfT)**, the objective is to identify key environmental and temporal factors influencing accident severity. The findings aim to support data-driven road safety policies and targeted interventions.
+## 📌 Project Overview
 
----
+- **Goal:** Predict accident severity — Slight vs Severe/Fatal  
+- **Focus Metric:** Recall (maximize detection of serious/fatal accidents)  
+- **Dataset:** UK Road Safety Data (STATS19)  
+- **Size:** ~1.9 million records  
+- **Environment:** Python (Google Colab)  
 
-## Project Overview
+## 📁 Dataset Details
 
-- **Goal**: Predict accident severity — categorized as *Slight*, *Serious*, or *Fatal*.
-- **Dataset**: UK Road Safety data (STATS19), obtained via [Kaggle]([https://www.kaggle.com/](https://www.kaggle.com/datasets/tsiaras/uk-road-safety-accidents-and-vehicles).
-- **Size**: ~1.9 million records (~200–400 MB).
-- **Environment**: Python in Google Colab, version control via GitHub.
+- **Accident Data:** `Accident_Information.csv`  
+- **Vehicle Data:** `Vehicle_Information.csv`  
+- **License:** UK Open Government Licence (OGL)  
 
----
+### Key Features
 
-## Dataset Details
+**Accident-level:** Severity, Weather, Lighting, Urban/Rural, Road Surface, Road Type, Date & Time, Location  
+**Vehicle-level:** Vehicle Type, Engine Capacity, Vehicle Age, Driver Age & Sex, Vehicle Hand Drive  
 
-- **Source**: [UK Department for Transport (DfT)]([https://www.gov.uk/government/statistical-data-sets/road-accidents-and-safety-statistics-data-tables](https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-accidents-safety-data)
-- **File Used**: `Accident_Information.csv`
-- **Data License**: UK Open Government Licence (OGL)
-- **Key Features**:
-  - Accident Severity (Target)
-  - Weather Conditions
-  - Lighting Conditions
-  - Urban/Rural Classification
-  - Road Surface Conditions
-  - Date and Time of Accident
+**Processing:** Datasets merged on `Accident_Index`; missing values handled; categorical encoding applied.  
 
-> All data is anonymized and used in accordance with ethical research practices.
+## 🧹 Methodology
 
----
-## File
-Final code file- **Road_Accident_Prediction_finalmodels_with_app.ipynb**
-https://github.com/aishwarya-shekar-babu/Road-Accident-Prediction/blob/main/Road_Accident_Prediction_finalmodels_with_app.ipynb
+1. Merge accident and vehicle datasets  
+2. Clean and preprocess data: handle missing values, remove redundant columns, engineer features  
+3. Encode categorical variables (label encoding and one-hot encoding)  
+4. Balance classes via downsampling for fair model training  
+5. Train machine learning models: Logistic Regression, Random Forest, XGBoost, Multilayer Perceptron (MLP)  
+6. Evaluate models using **recall, F1-score, ROC AUC, confusion matrices, and precision-recall curves**  
 
-## Methodology
+## 🖥 Interactive Input Window
 
-### Preprocessing
+A small interface allows users to test accident severity predictions using custom inputs.
 
-- Data cleaning and feature engineering
-- Encoding categorical variables
-- Handling missing values
-- Class balancing
+**Adjustable Inputs:**
+
+- Casualties, Vehicles, Hour, Month, Year, Day of Week  
+- Road Type, Speed Bin, Urban/Rural, Weather, Lighting, Surface, Season, Time of Day  
+- Driver Age, Sex, IMD Decile  
+- Vehicle Type, Left-Hand Drive, Vehicle Age, Engine CC  
+
+**Functionality:**
+
+- Enter or select values for accident and vehicle features  
+- Click **Predict**  
+- Model outputs predicted severity: **Slight, Serious, or Fatal**  
+
+This allows **real-time testing and exploration** of different accident scenarios.  
+
+## 📂 Files
+
+- `Road_Accident_Prediction_finalmodels_with_app.ipynb` — Full code, analysis, and interactive prediction window  
+- [View on GitHub](#)  
+
+## ⚠️ Notes
+
+- The model focuses on **maximizing recall for severe/fatal accidents**, ensuring these high-risk cases are reliably identified.  
+- All data is anonymized and used in accordance with ethical research practices.  
