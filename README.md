@@ -2,16 +2,17 @@
 
 This project predicts the severity of road accidents in the UK using urban factors, weather, and vehicle data. The main goal is to **identify high-risk accidents** and prioritize detection of severe or fatal cases.  
 
-## 📌 Project Overview
+##  Project Overview
 
 - **Goal:** Predict accident severity — Slight vs Severe/Fatal  
 - **Focus Metric:** Recall (maximize detection of serious/fatal accidents)  
-- **Dataset:** UK Road Safety Data (STATS19)  
+- **Dataset:** UK Road Safety Data (STATS19)  obtained via [Kaggle]([https://www.kaggle.com/](https://www.kaggle.com/datasets/tsiaras/uk-road-safety-accidents-and-vehicles).
 - **Size:** ~1.9 million records  
 - **Environment:** Python (Google Colab)  
 
-## 📁 Dataset Details
+## Dataset Details
 
+- **Source**: [UK Department for Transport (DfT)]([https://www.gov.uk/government/statistical-data-sets/road-accidents-and-safety-statistics-data-tables](https://www.data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-accidents-safety-data)
 - **Accident Data:** `Accident_Information.csv`  
 - **Vehicle Data:** `Vehicle_Information.csv`  
 - **License:** UK Open Government Licence (OGL)  
@@ -32,7 +33,7 @@ This project predicts the severity of road accidents in the UK using urban facto
 5. Train machine learning models: Logistic Regression, Random Forest, XGBoost, Multilayer Perceptron (MLP)  
 6. Evaluate models using **recall, F1-score, ROC AUC, confusion matrices, and precision-recall curves**  
 
-## 🖥 Interactive Input Window
+##  Interactive Input Window
 
 A small interface allows users to test accident severity predictions using custom inputs.
 
@@ -51,12 +52,11 @@ A small interface allows users to test accident severity predictions using custo
 
 This allows **real-time testing and exploration** of different accident scenarios.  
 
-## 📂 Files
+##  Files
 
 - `Road_Accident_Prediction_finalmodels_with_app.ipynb` — Full code, analysis, and interactive prediction window  
-- [View on GitHub](#)  
 
-## ⚠️ Notes
+##  Notes
 
 - The model focuses on **maximizing recall for severe/fatal accidents**, ensuring these high-risk cases are reliably identified.  
-- All data is anonymized and used in accordance with ethical research practices.  
+- All data is anonymized and used in accordance with ethical research practices. 
