@@ -24,7 +24,7 @@ This project predicts the severity of road accidents in the UK using urban facto
 
 **Processing:** Datasets merged on `Accident_Index`; missing values handled; categorical encoding applied.  
 
-## 🧹 Methodology
+## Methodology
 
 1. Merge accident and vehicle datasets  
 2. Clean and preprocess data: handle missing values, remove redundant columns, engineer features  
