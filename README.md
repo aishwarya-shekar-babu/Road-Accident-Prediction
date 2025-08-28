@@ -54,7 +54,7 @@ This allows **real-time testing and exploration** of different accident scenario
 
 ##  Files
 
-- `Road_Accident_Prediction_finalmodels_with_app.ipynb` — Full code, analysis, and interactive prediction window  
+- `Road_Accident_Prediction_finalmodels.ipynb` — Full code, analysis
 
 ##  Notes
 
