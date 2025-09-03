@@ -54,7 +54,12 @@ This allows **real-time testing and exploration** of different accident scenario
 
 ##  Files
 - `dataset`- archive-vehicle.zip,archive.zip are both dataset,you could unzip it and  save  at  **/content/drive/MyDrive/RoadAccidentData/archive/** 
-   
+   since it is a large file then please use below commands in colab
+#!wget https://github.com/aishwarya-shekar-babu/Road-Accident-Prediction/raw/main/archive.zip -O /content/drive/MyDrive/RoadAccidentData/archive.zip
+#!wget https://github.com/aishwarya-shekar-babu/Road-Accident-Prediction/raw/main/archive-vehicle.zip -O /content/drive/MyDrive/RoadAccidentData/archive-vehicle.zip
+
+     
+
 - `Road_Accident_Prediction_finalmodels.ipynb` — Full code, analysis
 - `Road_Accident_Prediction_finalmodels_app.ipynb` -interface
 
