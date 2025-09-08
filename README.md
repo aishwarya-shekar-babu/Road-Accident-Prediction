@@ -59,9 +59,16 @@ This allows **real-time testing and exploration** of different accident scenario
 #!wget https://github.com/aishwarya-shekar-babu/Road-Accident-Prediction/raw/main/archive-vehicle.zip -O /content/drive/MyDrive/RoadAccidentData/archive-vehicle.zip
 
      
+## 🚀 Notebooks  
 
-- `Road_Accident_Prediction_finalmodels.ipynb` — Full code, analysis
-- `Road_Accident_Prediction_finalmodels_app.ipynb` -interface
+### Road_Accident_Prediction_finalmodels.ipynb  
+- Complete workflow: data loading, preprocessing, exploratory data analysis, feature engineering, model building, training, and evaluation.  
+- Use this notebook if you want to see the **entire pipeline** and replicate the results.  
+
+### Road_Accident_Prediction_finalmodels_app.ipynb  
+- Interactive application built on top of the trained models.  
+- Provides an interface for users to input parameters and get accident predictions.  
+
 
 ##  Notes
 
